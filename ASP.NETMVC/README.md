@@ -1,0 +1,2 @@
+# 基于ASP.NETMVC模仿无尽征途网站
+使用基于MSQLSERVER为数据库，通过ASP.NETMVC开发实现登录注册显示图片功能
