@@ -1,0 +1,60 @@
+﻿Name: "AutoCAD安装助手" #安装包名称
+Title: "AutoCAD安装助手" #标题
+Shortcut: "AutoCAD安装助手" #快捷方式名称
+GoodsId: 11722 # 商品ID  17244444444
+Api: "https://zong.rjxz8.cn/api.php" # 商品ID
+
+#主页
+ServiceLink: "https://tb.53kf.com/code/client/6f58e7298d2d3fbf7285f41232b58c2b4/1" #在线客服 链接, 或者二维码图片链接
+IsBrowserOpen: true #在线客服是否用浏览器打开, true:用浏览器打开, false:显示二维码
+MyOrderLink: "http://zongz.xiaoai999.com/?type=text&id=6" #我的订单打开的链接
+
+ActivateButtonText: '立即安装' #立即激活按钮文字
+ActivateButtonFontSize: 18 #立即激活按钮文字大小
+ActivateButton: 160 70 #激活按钮宽高
+ActivateButtonMargin: 30 -28 #激活按钮左上边距
+
+PayPriceFontLeftMargin: 85 # 选择版本下边的 "xxx永久使用" 左边距
+
+InputControlLeftBottomMargin: 30 60 # 输入控件距左下角的距离
+InputControlSize: 180 35 # 主页的选择框和手机号码输入框的宽高
+InputLabelFontSize: 16 #输入标签的字体大小
+InputLabel1: "选择版本:  " #选择版本标签
+InputLabel2: "手机号码:  " #手机号标签
+
+
+RightTopButtomSize: 100 40 # 右上角的两个按钮宽高
+RightTopMargin: 20 20 #右上角的两个按钮距离窗口的边距
+RightTopButtomSep: 15 #右上角的两个按钮之间的间隔
+
+#LeftBottomImageSize: 200 100 # 主页左下角图片
+#LeftBottomImageMargin: 0 0 # 主页左下角图片的左下边距
+
+LeftTopImageSize: 900 600 #主页的左上角图片大小
+
+#RightImageWidth: 260 #主页的右边图片宽度
+
+#支付页面
+PayPageButton: 120 40 # 支付页面按钮宽高
+PayPageButtonLeftMargin: 20 # 支付页面按钮左边距
+PayCodeImageSize: 160 160 #二维码图片大小
+
+PayButtonOrder: 2 # 支付按钮顺序   0隐藏    1是支付宝在前      2是微信在前    3只显示支付宝   4只显示微信
+
+
+#安装页面
+InstallPageButton: 100 40 # 安装页面按钮宽高
+
+DownloadLabel: "下载地址" #下载地址标签
+DownloadLinkButtonText: "点击下载" # 下载地址按钮文字
+
+InstallLabel: "安装教程" #安装教程标签
+InstallButtonText: "点击查看" # 安装教程按钮文字
+
+InstallDescriptionLabel: "安装说明" # 安装说明标签
+#InstallDescription: "安装遇到任何问题  请联系售后处理" # 安装说明
+
+
+InstallCodeSize: 150 150 # 安装页面二维码大小
+InstallButtonLink: " " #安装教程链接 写成空白就跳转到发货页面, 否则跳转到目标链接
+#InstallButtonLink: " " #这种就是跳转到发货页面

@@ -1,0 +1,27 @@
+﻿@using GameSystem.Models
+@{
+    ViewBag.Title = "视频图片";
+}
+
+<!--信息列表-->
+<div id="content">
+    <div id="clink">
+        <img src="/img/icon_home2.png" />
+        <a href="/Home/Index">首页</a>  >>
+        <a href="/Home/Videos">视频图片</a>
+    </div>
+    <!--图文混排，视频列表-->
+    <div id="videos">
+        @foreach (Msg item in ViewBag.list)
+        {
+            <dl>
+                <dt>
+                    <a href="/Msg/Details/@item.MsgID"><img src="@item.MsgPhoto" /></a>
+                </dt>
+                <dd><a href="/Msg/Details/@item.MsgID">@item.MsgTitle</a></dd>
+            </dl>
+        }
+        <div style="clear:both;"></div>
+    </div>
+</div>
+

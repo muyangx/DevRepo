@@ -1,0 +1,36 @@
+﻿@model IEnumerable<GameSystem.Models.Msg>
+@{
+    ViewBag.Title = "信息管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content">
+    <div id="clink">
+        <img src="/img/icon_home2.png" />
+        <a href="/Home/Index">首页</a>  >>
+        <a href="/Msg/Index">信息管理</a> >>
+        <a href="/Msg/Create">新增信息</a>
+    </div>
+    <!--图文混排，信息列表-->
+    <table  border="1" cellspacing="0"  >
+        <tr align="center">
+            <td>标题</td>
+            <td>图片</td>
+            <td>类型</td>
+            <td>操作</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr  align="center">
+                <td width="300px">@item.MsgTitle</td>
+                <td  width="150px"><img src="@item.MsgPhoto" style="width:100px;height:50px;" /></td>
+                <td  width="150px">@item.MsgType</td>
+                <td width="150px">
+                    <a href="/Msg/Details/@item.MsgID" target="_blank">详情</a> |
+                    <a href="/Msg/Edit/@item.MsgID">修改</a> |
+                    <a href="/Msg/Delete/@item.MsgID">删除</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
